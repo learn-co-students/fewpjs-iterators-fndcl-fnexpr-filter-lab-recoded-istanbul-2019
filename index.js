@@ -6,7 +6,7 @@ function findMatching(Array,String){
 }
 
 function fuzzyMatch (Array,String){
-  return Array.filter(el => el.charAt(0)==String)
+  return Array.filter(el => (el.charAt(0)+el.charAt(1))===String)
 }
 
 function matchName(Array,String){
