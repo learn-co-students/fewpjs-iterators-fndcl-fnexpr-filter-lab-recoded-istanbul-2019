@@ -10,8 +10,8 @@ function findMatching(drivers, st){
 }
 
 function matchName(drivers, st){
-    return drivers.filter(e => e.name === st)
+    return drivers.filter(element => element.name === st)
 }
 function fuzzyMatch(drivers, st){
-    return drivers.filter(e => st === e.slice(0,2));
+    return drivers.filter(element => st === element.slice(0,2));
 }
